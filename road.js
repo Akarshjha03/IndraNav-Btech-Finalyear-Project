@@ -1,57 +1,53 @@
-class Road{
-    constructor(x,width,lanecount=4){
+class Road {
+    constructor(x, width, laneCount = 4) {
+        this.x = x;
+        this.width = width;
+        this.laneCount = laneCount;
 
-        this.x=x;
-        this.width=width;
-        this.lanecount=lanecount;
+        this.left = x - width / 2;
+        this.right = x + width / 2;
 
-        this.left=x-width/2;
-        this.right=x+width/2;
+        const infinity = 1000000;
+        this.top = -infinity;
+        this.bottom = infinity;
 
-        const infinity=1000000;
-        this.top=-infinity;
-        this.bottom=infinity;
+        const topLeft = { x: this.left, y: this.top };
+        const topRight = { x: this.right, y: this.top };
+        const bottomLeft = { x: this.left, y: this.bottom };
+        const bottomRight = { x: this.right, y: this.bottom };
 
-        const topLeft={x:this.left,y:this.top};
-        const topRight={x:this.right,y:this.top};
-        const bottomLeft={x:this.left,y:this.bottom};
-        const bottomRight={x:this.right,y:this.bottom};
-        this.borders=[
-            [topLeft,bottomLeft],
-            [topRight,bottomRight]
+        this.borders = [
+            [topLeft, bottomLeft],
+            [topRight, bottomRight]
         ];
     }
 
-    gatLaneCeter(laneIndex){
-        const lineWidth=this.width/this.laneCount;
-        return this.left+laneWidth/2+laneIndex*laneWidth;
-            Math.min(laneIndex,this.laneCount-1)*laneWidth;
+    getLaneCenter(laneIndex) {
+        const laneWidth = this.width / this.laneCount;
+        laneIndex = Math.min(Math.max(laneIndex, 0), this.laneCount - 1); // Ensure valid lane index
+        return this.left + laneWidth / 2 + laneIndex * laneWidth;
     }
 
-    draw(ctx){
-        ctx.lineWidth=5;
-        ctx.strokeStyle='white';
+    draw(ctx) {
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = 'white';
 
-        for(let i=1;i<=this.lanecount-1;i++){
-            const x=lerp(
-                this.left,
-                this.right,
-                i/this.lanecount
-            );
-            
-            ctx.setLineDash([20,20]);
+        for (let i = 1; i < this.laneCount; i++) {
+            const x = this.left + (i / this.laneCount) * this.width;
+
+            ctx.setLineDash([20, 20]);
             ctx.beginPath();
-            ctx.moveTo(x,this.top);
-            ctx.lineTo(x,this.bottom);
+            ctx.moveTo(x, this.top);
+            ctx.lineTo(x, this.bottom);
             ctx.stroke();
-
         }
 
-        ctx.setLineDash([]);
-        this.borders.forEach(border=>{
+        ctx.setLineDash([]); // Reset line dash before drawing borders
+
+        this.borders.forEach(border => {
             ctx.beginPath();
-            ctx.moveTo(border[0].x,border[0].y);
-            ctx.lineTo(border[1].x,border[1].y);
+            ctx.moveTo(border[0].x, border[0].y);
+            ctx.lineTo(border[1].x, border[1].y);
             ctx.stroke();
         });
     }
