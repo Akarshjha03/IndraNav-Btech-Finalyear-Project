@@ -15,6 +15,7 @@ Watch the tutorial: [Self-Driving Car with JavaScript](link-to-tutorial)
 - 🖥️ Customizable road and traffic settings
 
 ## 📂 Project Structure
+```text
 IndraNav - Visualize
 ├── 📁 assets        # Image assets (if any)
 ├── 📄 index.html    # Main HTML file
@@ -24,6 +25,7 @@ IndraNav - Visualize
 ├── 📄 road.js       # Road and lane drawing logic
 ├── 📄 network.js    # Simple neural network implementation
 └── 📄 utils.js      # Helper functions
+```
 
 🖥️ Usage
 Use the arrow keys to manually control the car (optional).
