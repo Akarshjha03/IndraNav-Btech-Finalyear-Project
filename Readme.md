@@ -29,10 +29,11 @@ IndraNav - Visualize
 - Refresh the page to restart the training process.
 - Adjust neural network parameters in network.js for better learning results.
 
-💡 How It Works
-The car senses its surroundings using raycasting sensors.
-A neural network processes sensor data and determines the best steering actions.
-The car continuously learns from interactions with obstacles and other cars.
+## 💡 How It Works
+1. The car senses its surroundings using raycasting sensors.
+2. A neural network processes sensor data and determines the best steering actions.
+3. The car continuously learns from interactions with obstacles and other cars.
+
 🛠️ Technologies Used
 JavaScript (Vanilla) - Core logic
 HTML & CSS - Interface and visualization
