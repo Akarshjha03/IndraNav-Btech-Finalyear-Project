@@ -34,14 +34,15 @@ IndraNav - Visualize
 2. A neural network processes sensor data and determines the best steering actions.
 3. The car continuously learns from interactions with obstacles and other cars.
 
-🛠️ Technologies Used
-JavaScript (Vanilla) - Core logic
-HTML & CSS - Interface and visualization
-Canvas API - Graphics rendering
-📜 License
+## 🛠️ Technologies Used
+- JavaScript (Vanilla) - Core logic
+- HTML & CSS - Interface and visualization
+- Canvas API - Graphics rendering
+
+## 📜 License
 This project is open-source under the MIT License.
 
-🙌 Contributing
+## 🙌 Contributing
 Contributions are welcome! To contribute:
 
 Fork the repository 🍴
