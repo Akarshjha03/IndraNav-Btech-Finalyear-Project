@@ -1,4 +1,4 @@
-# Self-Driving Car with JavaScript 🚗💡
+# 🚗 INDRANAV: ADAPTIVE DRIVING SYSTEM - SIMULATION 🛣️
 
 A fully functional self-driving car simulation built using vanilla JavaScript, featuring a neural network for autonomous navigation. No external libraries required! 🎯
 
