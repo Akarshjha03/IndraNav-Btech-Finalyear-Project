@@ -45,9 +45,7 @@ This project is open-source under the MIT License.
 ## 🙌 Contributing
 Contributions are welcome! To contribute:
 
-Fork the repository 🍴
-Create a new branch 🔀
-Implement your changes 🚀
-Submit a pull request ✅
-📬 Contact
-For questions, reach out via GitHub Issues.
+- Fork the repository 🍴
+- Create a new branch 🔀
+- Implement your changes 🚀
+- Submit a pull request ✅
