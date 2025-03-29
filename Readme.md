@@ -2,9 +2,6 @@
 
 A fully functional self-driving car simulation built using vanilla JavaScript, featuring a neural network for autonomous navigation. No external libraries required! 🎯
 
-## 🚀 Demo
-
-Watch the tutorial: [Self-Driving Car with JavaScript](link-to-tutorial)
 
 ## 📌 Features
 
@@ -27,10 +24,11 @@ IndraNav - Visualize
 └── 📄 utils.js      # Helper functions
 ```
 
-🖥️ Usage
-Use the arrow keys to manually control the car (optional).
-Refresh the page to restart the training process.
-Adjust neural network parameters in network.js for better learning results.
+## 🖥️ Usage
+- Use the arrow keys to manually control the car (optional).
+- Refresh the page to restart the training process.
+- Adjust neural network parameters in network.js for better learning results.
+
 💡 How It Works
 The car senses its surroundings using raycasting sensors.
 A neural network processes sensor data and determines the best steering actions.
