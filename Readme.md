@@ -2,6 +2,7 @@
 
 A fully functional self-driving car simulation built using vanilla JavaScript, featuring a neural network for autonomous navigation. No external libraries required! 🎯
 
+---
 
 ## 📌 Features
 
@@ -10,6 +11,8 @@ A fully functional self-driving car simulation built using vanilla JavaScript, f
 - 🎯 Collision detection and lane navigation
 - 📈 Machine learning with a simple backpropagation algorithm
 - 🖥️ Customizable road and traffic settings
+
+---
 
 ## 📂 Project Structure
 ```text
@@ -38,6 +41,8 @@ IndraNav - Visualize
 - JavaScript (Vanilla) - Core logic
 - HTML & CSS - Interface and visualization
 - Canvas API - Graphics rendering
+
+---
 
 ## 📜 License
 This project is open-source under the MIT License.
