@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+opencv-python
+dlib
+imutils
+numpy
+scipy
+pygame
